@@ -1,3 +1,7 @@
+# This app is deployed on Netlify
+
+https://brave-morse-bc9dc6.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
