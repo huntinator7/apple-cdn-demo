@@ -1,0 +1,15 @@
+{
+  "name": "apple-cdn-demo-wasm",
+  "collaborators": [
+    "hunterarnell"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "apple_cdn_demo_wasm_bg.wasm",
+    "apple_cdn_demo_wasm.js",
+    "apple_cdn_demo_wasm.d.ts"
+  ],
+  "module": "apple_cdn_demo_wasm.js",
+  "types": "apple_cdn_demo_wasm.d.ts",
+  "sideEffects": false
+}
