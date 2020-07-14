@@ -111,29 +111,6 @@ const App = () => {
         // ))
       }
       <svg height="1820" width="3900">
-        {shorterResult?.map((n, i) => {
-          if (i === 0) {
-            return;
-          }
-          return (
-            <Line
-              id1={shorterResult[i - 1]}
-              id2={n}
-              weight={50}
-              nodes={[
-                ...nodes,
-                {
-                  id: 0,
-                  lat: parseInt(customerLat),
-                  long: parseInt(customerLong),
-                  size: "large",
-                  name: "Customer",
-                },
-              ]}
-              shorterRes
-            />
-          );
-        })}
         {longerResult?.map((n, i) => {
           if (i === 0) {
             return;
@@ -154,6 +131,29 @@ const App = () => {
                 },
               ]}
               longerRes
+            />
+          );
+        })}
+        {shorterResult?.map((n, i) => {
+          if (i === 0) {
+            return;
+          }
+          return (
+            <Line
+              id1={shorterResult[i - 1]}
+              id2={n}
+              weight={50}
+              nodes={[
+                ...nodes,
+                {
+                  id: 0,
+                  lat: parseInt(customerLat),
+                  long: parseInt(customerLong),
+                  size: "large",
+                  name: "Customer",
+                },
+              ]}
+              shorterRes
             />
           );
         })}
